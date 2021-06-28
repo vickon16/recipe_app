@@ -189,6 +189,11 @@ header button {
   transition: 500ms ease-in-out;
 }
 
+.meal_body .fav_btn:focus {
+  border: none;
+  outline: none;
+}
+
 .meal_body .fav_btn.active {
   transform: scale(1.5);
   color: red;
