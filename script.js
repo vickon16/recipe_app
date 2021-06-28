@@ -1,7 +1,7 @@
 
 
 setTimeout(function() {
-  alert("This is a recipe app. \nClick the heart button to add meals to favorite. \nSearch for favorite meals with the input box. \nClick the close button after each favorite meal to remove from favorite. \n\nCreated by Vickon.")
+  alert("This is a recipe app. \nClick the heart button to add meals to favorite. \nSearch for favorite meals with the input box. \nClick the close button after each favorite meal to remove from favorite. \nClick the refresh button to get more random meals. \nClick on the favorite meal images to see the recipe instructions and measurements. \n\nCreated by Vickon.")
 }, 4000)
 
 
@@ -58,7 +58,8 @@ function addMeal(mealData, random = false, badge) {
 }
 
 function reloadPage() {
-  location.reload();
+  meal.innerHTML = "";
+  getRandomMeals()
 }
 
 function addToFav(button, id) {

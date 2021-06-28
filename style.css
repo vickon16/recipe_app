@@ -14,7 +14,7 @@
 
 body {
   margin: 0;
-  padding:0;
+  padding:0 1rem;
   font-family: var(--poppins);
   background: #1c92d2;
   background: -webkit-linear-gradient(to left, #f2fcfe, #1c92d2);
@@ -110,15 +110,9 @@ header button {
   background-color: transparent;
   border:none;
   position:absolute;
-  top:-.1rem;
-  right: .1rem;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.fav_meals li:hover .clear-meal {
-  opacity: 1;
-  visibility: visible;
+  top:0;
+  right: 0rem;
+  font-size: 1rem;
 }
 
 .fav_meals li img {
